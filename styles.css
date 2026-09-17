@@ -6,6 +6,7 @@ body {
     min-height: 100vh; /* Permite que el body crezca si hay más contenido */
     background-position: center;
     background-size: cover;
+    background-attachment: fixed; /* Agrega el efecto parallax */
     background-color: #f97e9b;
     color: #333;
 }
@@ -32,7 +33,7 @@ h1 {
 
 @font-face {
     font-family: 'Digital7';
-    src: url('digital7\(mono\).ttf') format('truetype');
+    src: url('digital7\(mono).ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -590,8 +591,5 @@ footer {
     text-decoration: underline;
 }
 
-.contenedor-principal {
-  will-change: transform;
-  -webkit-overflow-scrolling: touch; /* Mejora el scroll en iPhone/Safari */
-}
+
 
