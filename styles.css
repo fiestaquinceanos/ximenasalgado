@@ -2,7 +2,7 @@
 body {
     margin: 0;
     font-family: 'Raleway', sans-serif;
-    background-image: url('rosasflies.jfif') format('truetype');
+    background-image: url('rosasflies.jfif');
     min-height: 100vh; /* Permite que el body crezca si hay más contenido */
     background-position: center;
     background-size: cover;
