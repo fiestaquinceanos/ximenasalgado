@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XV Años - Invitación</title>
+    <!-- Conexión con el archivo CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    
+    <!-- ===================== HEADER ===================== -->
+    <!-- Espacio para el nombre y foto principal de la quinceañera -->
+    <header class="hero">
+        <div class="hero-content">
+            <!-- Foto principal de la quinceañera -->
+            
+            <!-- Nombre de la quinceañera -->
+            <h1 class="nombre">Ximena Salgado</h1>
+            <h4 class="subtitulo">Mis XV Años</h4>
+            <h5 class="fecha">03 de Octubre del 2026</h5>
+        </div>
+    </header>
+
+    <section class="parallax">
+        <h3>Alégrate, joven, en tu juventud, y tome placer tu corazón en los dias
+            de tu adolescencia; y anda en los caminos de tu corazón y en la vista de tus
+            ojos; pero sabes, que sobre todas las cosas te juzgará Dios. Ecleiastés 11:9</h3>
+    </section>
+
+   <!-- ===== CARRUSEL DE IMÁGENES ===== -->
+    <section id="carrusel" class="seccion fade-in">
+        <div class="contenedor-carrusel">
+            <div class="slide">
+                <img src="posecultural.jpg" alt="Foto 1">
+            </div>
+            <div class="slide">
+                <img src="sonriendo.jpg" alt="Foto 2">
+            </div>
+            <div class="slide">
+                <img src="aespalda.jpg" alt="Foto 3">
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TEMPORIZADOR ELEGANTE ===== -->
+    <section id="temporizador" class="seccion">
+        <!-- Imagen de título -->
+        <div class="titulo-imagen">
+            <img src="Faltan.png" alt="Título del Evento">
+        </div>
+        <div class="contador">
+            <div class="tiempo">
+                <span id="dias">00</span>
+                <small>Días</small>
+            </div>
+            <div class="tiempo">
+                <span id="horas">00</span>
+                <small>Horas</small>
+            </div>
+            <div class="tiempo">
+                <span id="minutos">00</span>
+                <small>Minutos</small>
+            </div>
+            <div class="tiempo">
+                <span id="segundos">00</span>
+                <small>Segundos</small>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+    // ===== SCRIPT PARA ACTUALIZAR EL TEMPORIZADOR ===== //
+    const fechaEvento = new Date("October 03, 2026 20:00:00").getTime();
+
+    const cuentaAtras = setInterval(() => {
+        const ahora = new Date().getTime();
+        const diferencia = fechaEvento - ahora;
+
+        if (diferencia < 0) {
+            clearInterval(cuentaAtras);
+            document.getElementById("temporizador").innerHTML = "<h2>¡El gran día ha llegado!</h2>";
+            return;
+        }
+
+        const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
+        const horas = Math.floor((diferencia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutos = Math.floor((diferencia % (1000 * 60 * 60)) / (1000 * 60));
+        const segundos = Math.floor((diferencia % (1000 * 60)) / 1000);
+
+        document.getElementById("dias").textContent = dias.toString().padStart(2, '0');
+        document.getElementById("horas").textContent = horas.toString().padStart(2, '0');
+        document.getElementById("minutos").textContent = minutos.toString().padStart(2, '0');
+        document.getElementById("segundos").textContent = segundos.toString().padStart(2, '0');
+    }, 1000);
+    </script>
+
+    <!-- ===================== INFORMACIÓN DE LA SALON ===================== -->
+    <section class="misa">
+        <h2>Salón de eventos</h2>
+        <h4>Riomaggiore, salón de eventos</h4>
+        <p>Dirección: C. Oriente. 6 #600, Cuauhtémoc, 88950</p>
+        
+        <!-- Imagen del lugar -->
+        <img src="Riomaggiore.png" alt="Ceremonia" class="imagen-lugar">
+
+        <!-- Botón Bezel que redirige a Google Maps -->
+         <div style="text-align: center;">
+            <a href="https://maps.app.goo.gl/1NqJhnxNXqPSknyn9" target="_blank" class="btn-bezel">
+                Ver en Google Maps
+            </a>
+        </div>
+
+    </section>
+    
+
+<section class="parallax2"></section>
+
+     <!-- ===================== ITINERARIO ===================== -->
+    <section class="itinerario">
+        <img src="programacion.png"alt="Imagen de itinerario">
+    </section>
+
+    <!-- ===== CARRUSEL DE IMÁGENES ===== -->
+    <section id="carrusel" class="seccion fade-in">
+        <div class="contenedor-carrusel">
+            <div class="slide">
+                <img src="enpasto.jpg" alt="Foto 1">
+            </div>
+            <div class="slide">
+                <img src="fondocultural2.jpg" alt="Foto 2">
+            </div>
+            <div class="slide">
+                <img src="recargadacultural.jpg" alt="Foto 3">
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== DRESS CODE COKTAIL ===== -->
+
+    <section class="vestimenta">
+        <h2>Vestimenta</h2>
+        <h4>Informal</h4>
+        <img src="vestimenta.png" alt="traje" class="imagen-lugar">
+    </section>
+
+    <!-- ===== COGALLE ===== -->
+     
+    <section class="parallax3"></section>
+
+    <section class="regalos">
+        <h2>Recomendación de regalo</h2>
+        <img src="sobre.png" alt="regalo" class="imagen-regalo">
+        <h4>"Sobre o lo que desees, cualquier regalo de corazón es bienvenido"</h4>
+    </section>
+    
+    <!-- ===================== CONFIRMACIÓN DE ASISTENCIA ===================== -->
+    <section id="formulario-asistencia" class="asistencia">
+        <h2>Confirma tu asistencia</h2>
+            <h6>"Una noche, buena música y los mejores momentos. 
+                ¡Acompáñame a festejar mis XV!"</h6>
+
+            <!-- Botón de envío -->
+            <div class="campo-formulario">
+                <button onclick="openWhatsApp()">
+                    <i class="fa-brands fa-whatsapp"></i> Abrir WhatsApp
+                </button>
+            </div>
+    </section>
+
+    <!-- ===================== SCRIPT FORMULARIO ===================== -->
+        <script>
+            function openWhatsApp() {
+            const phoneNumber = "528992541185"; // Número de teléfono con código de país.
+            const url = `https://wa.me/${phoneNumber}`;
+            window.open(url, '_blank');
+            }
+        </script>
+
+
+        <!-- ===== MÚSICA AUTOMÁTICA EN LA INVITACIÓN ===== -->
+        <div class="player-musica">
+            <audio id="musica-fondo" autoplay loop>
+                <source src="musica.mp3" type="audio/mpeg">
+            </audio>
+            <button id="toggleMusica">⏸ Reproducir Música</button>
+        </div>
+
+    <script>
+        // Controlar el botón de pausar/reanudar
+        const musica = document.getElementById("musica-fondo");
+        const boton = document.getElementById("toggleMusica");
+
+        boton.addEventListener("click", () => {
+            if (musica.paused) {
+                musica.play();
+                boton.textContent = "⏸ Pausar Música";
+            } else {
+                musica.pause();
+                boton.textContent = "▶ Reanudar Música";
+            }
+        });
+    </script>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer>
+        <img src="footer.png" alt="Descripción de la imagen del footer" class="footer-img">
+    </footer>
+        
+</body>
+</html>
+
+
