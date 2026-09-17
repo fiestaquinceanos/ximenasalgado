@@ -590,5 +590,8 @@ footer {
     text-decoration: underline;
 }
 
-
+.contenedor-principal {
+  will-change: transform;
+  -webkit-overflow-scrolling: touch; /* Mejora el scroll en iPhone/Safari */
+}
 
