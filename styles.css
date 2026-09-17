@@ -6,7 +6,6 @@ body {
     min-height: 100vh; /* Permite que el body crezca si hay más contenido */
     background-position: center;
     background-size: cover;
-    background-attachment: fixed; /* Agrega el efecto parallax */
     background-color: #f97e9b;
     color: #333;
 }
