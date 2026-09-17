@@ -273,7 +273,13 @@ section {
         inset -2px -2px 6px rgba(255, 255, 255, 0.2);
 }
 
-
+.hero p {
+    font-family: 'TCBenguiatStdMediumC';
+    text-align: center;
+    font-size: 130%;
+    color: #ffffff; /* Azul rey */
+    margin-bottom: 70px;
+}
 
 
 /* ===================== TEMPORIZADOR ===================== */
