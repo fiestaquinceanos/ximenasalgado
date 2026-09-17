@@ -22,6 +22,7 @@ h1 {
     src: url('GreatVibesRegular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -29,6 +30,7 @@ h1 {
     src: url('OpenSansRegular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -36,6 +38,7 @@ h1 {
     src: url('digital7\(mono).ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -43,6 +46,7 @@ h1 {
     src: url('ITCBenguiatStdMediumCn.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -50,6 +54,7 @@ h1 {
     src: url('VerandahReverie.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
