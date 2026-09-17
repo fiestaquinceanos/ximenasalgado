@@ -591,22 +591,38 @@ footer {
     text-decoration: underline;
 }
 
-/* ===================== PARALLAX OFF PARA MÓVILES ===================== */
+/* ===================== SOLUCIÓN PARA FONDO EN MÓVILES ===================== */
 @media (max-width: 768px) {
-    body, 
+    /* 1. Desactiva el fondo directo del body en móviles */
+    body {
+        background-image: none !important;
+        background-color: #f97e9b; /* Color base de respaldo */
+    }
+
+    /* 2. Crea una capa fija de fondo que no se estira ni distorsiona */
+    body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-image: url('rosasflies.jfif');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: -1; /* Se mantiene detrás de todo el contenido */
+    }
+
+    /* 3. Desactiva parallax en las demás secciones para fluidez */
     .hero, 
     .parallax, 
     .parallax2, 
     .parallax3, 
     #temporizador {
-        background-attachment: scroll !important; /* Desactiva el parallax */
-        background-size: cover !important;        /* Ocupa toda la pantalla sin deformarse */
-        background-position: center !important;   /* Centra la imagen */
+        background-attachment: scroll !important;
+        background-size: cover !important;
+        background-position: center !important;
         background-repeat: no-repeat !important;
-    }
-
-    /* 3. Optimización de sombra en el temporizador para fluidez */
-    .tiempo {
-        box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
     }
 }
