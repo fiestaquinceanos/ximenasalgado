@@ -591,5 +591,19 @@ footer {
     text-decoration: underline;
 }
 
+/* ===================== OPTIMIZACIÓN MÓVIL ===================== */
+@media (max-width: 768px) {
+    /* Desactiva el parallax en móviles para Android e iOS */
+    body, 
+    .parallax, 
+    .parallax2, 
+    .parallax3 {
+        background-attachment: scroll !important;
+    }
 
+    /* Reduce la carga de renderizado de sombras en pantallas pequeñas */
+    .tiempo {
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    }
+}
 
