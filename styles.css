@@ -2,7 +2,7 @@
 body {
     margin: 0;
     font-family: 'Raleway', sans-serif;
-    background-image: url('rosasflies.jfif');
+    background-image: url('rosasflies.jfif') format('truetype');
     min-height: 100vh; /* Permite que el body crezca si hay más contenido */
     background-position: center;
     background-size: cover;
@@ -19,35 +19,35 @@ h1 {
 
 @font-face {
     font-family: 'Great Vibes';
-    src: url('GreatVibesRegular.ttf');
+    src: url('GreatVibesRegular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'OpenSansRegular';
-    src: url('OpenSansRegular.ttf');
+    src: url('OpenSansRegular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Digital7';
-    src: url('digital7\(mono\).ttf');
+    src: url('digital7\(mono\).ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'ITCBenguiatStdMediumCn';
-    src: url('ITCBenguiatStdMediumCn.otf');
+    src: url('ITCBenguiatStdMediumCn.otf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'VerandahReverie';
-    src: url('VerandahReverie.otf');
+    src: url('VerandahReverie.otf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
