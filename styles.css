@@ -40,16 +40,32 @@ h1 {
 
 @font-face {
     font-family: 'ITCBenguiatStdMediumCn';
-    src: url('ITCBenguiatStdMediumCn.otf') format('truetype');
+    src: url('ITCBenguiatStdMediumCn.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'VerandahReverie';
-    src: url('VerandahReverie.otf') format('truetype');
+    src: url('VerandahReverie.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
+}
+
+@font-face {
+    font-family: 'TCBenguiatStdMediumC';
+    src: url('ITCBenguiatStdMediumCn.otf') format('opentype'); /* Cambiado a opentype */
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'VerandahReverie';
+    src: url('VerandahReverie.otf') format('opentype'); /* Cambiado a opentype */
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 
 h2 {
