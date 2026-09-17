@@ -591,30 +591,18 @@ footer {
     text-decoration: underline;
 }
 
-//* ===================== OPTIMIZACIÓN Y AJUSTE MÓVIL ===================== */
+/* ===================== PARALLAX OFF PARA MÓVILES ===================== */
 @media (max-width: 768px) {
-    /* 1. Ajuste general del fondo principal */
-    body {
-        background-attachment: scroll !important;
-        background-size: cover !important;
-        background-position: center center !important;
-    }
-
-    /* 2. Ajuste de las secciones con parallax para que no se deformen */
-    .hero,
+    body, 
+    .hero, 
     .parallax, 
     .parallax2, 
-    .parallax3 {
-        background-attachment: scroll !important;
-        background-size: cover !important;
-        background-position: center center !important;
-    }
-
-    .parallax,
-    .parallax2,
-    .parallax3 {
-        min-height: 50vh !important; /* Mantiene una altura adecuada sin estirar la imagen */
-        height: auto !important;
+    .parallax3, 
+    #temporizador {
+        background-attachment: scroll !important; /* Desactiva el parallax */
+        background-size: cover !important;        /* Ocupa toda la pantalla sin deformarse */
+        background-position: center !important;   /* Centra la imagen */
+        background-repeat: no-repeat !important;
     }
 
     /* 3. Optimización de sombra en el temporizador para fluidez */
