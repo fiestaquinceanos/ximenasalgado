@@ -43,7 +43,7 @@ h1 {
 
 @font-face {
     font-family: 'ITCBenguiatStdMediumCn';
-    src: url('ITCBenguiatStdMediumCn.OTF') format('opentype');
+    src: url('ITCBenguiatStdMediumCn.OTF') format('woff2');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
