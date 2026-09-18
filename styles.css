@@ -43,15 +43,15 @@ h1 {
 
 @font-face {
     font-family: 'ITCBenguiatStdMediumCn';
-    src: url('ITCBenguiatStdMediumCn.woff2') format('woff2');
-    src: url('ITCBenguiatStdMediumCn.OTF') format('opentype');
+    src: url('ITCBenguiatStdMediumCn.woff2') format('woff2'),
+         url('ITCBenguiatStdMediumCn.OTF') format('opentype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 
 h2 {
-    font-family: 'TCBenguiatStdMediumCn';
+    font-family: 'ITCBenguiatStdMediumCn';
     font-weight: normal;
     font-size: 230%;
     color: #FFFDF9;
@@ -75,7 +75,7 @@ h4 {
 }
 
 h5 {
-    font-family: 'TCBenguiatStdMediumCn';
+    font-family: 'ITCBenguiatStdMediumCn';
     font-weight: normal;
     font-size: 185%;
     color: #ffffff;
@@ -122,7 +122,7 @@ h6 {
 }
 
 .hero .nombre {
-    font-family: 'TCBenguiatStdMediumCn'; /* Fuente elegante */
+    font-family: 'ITCBenguiatStdMediumCn'; /* Fuente elegante */
     font-size: 2.5em;
     margin: 10px 0;
 }
@@ -176,7 +176,7 @@ section {
 /* ===== CARRUSEL ===== */
 
 #carrusel p {
-    font-family: 'TCBenguiatStdMediumCn';
+    font-family: 'ITCBenguiatStdMediumCn';
     text-align: center;
     font-size: 180%;
     color: #ffffff; /* Azul rey */
@@ -272,7 +272,7 @@ section {
 }
 
 .hero p {
-    font-family: 'TCBenguiatStdMediumCn';
+    font-family: 'ITCBenguiatStdMediumCn';
     text-align: center;
     font-size: 130%;
     color: #ffffff; /* Azul rey */
@@ -421,7 +421,7 @@ section {
 }
 
 .misa p {
-    font-family: 'TCBenguiatStdMediumCn';
+    font-family: 'ITCBenguiatStdMediumCn';
     text-align: center;
     font-size: 130%;
     color: #ffffff; /* Azul rey */
